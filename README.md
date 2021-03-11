@@ -71,4 +71,4 @@ curl localhost:8080/v1/search?attribute=priority&value=high
 ```
 
 ## Submitting
-We would prefer that a Github link (public or private) be provided with your solutions, however a zip archive is also acceptable.
+We would prefer that a Github link (public or private) be provided with your solution, however a zip archive is also acceptable.
