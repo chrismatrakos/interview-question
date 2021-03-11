@@ -18,7 +18,7 @@ The stakeholder for this project is mark.dessain@maersk.com. Please contact Mark
 ## Resources
 There is an example dataset that we have been given found in [data.json](./data.json) that should be used to assist with the development.
 
-There is an [openapi.json](./openapi.json) which is the specification that the API must conform to.
+There is an [openapi.json](./openapi.json) which is the specification that the API must conform to. It is based on [OpenAPI](https://en.wikipedia.org/wiki/OpenAPI_Specification).
 
 ## Exercise
 Build an API in your chosen programming language which meets the specification.
