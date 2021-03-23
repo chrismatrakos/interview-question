@@ -7,7 +7,7 @@ Thank you for applying for a job at Maersk. Building consistent, well thought ou
 The following is a short test to see how you would approach building a search API.
 
 ## Exercise
-Our team needs to build an API that can provide search over all the attributes in a given dataset.
+Our team needs to build an API that can provide full text search over all the attributes in a given dataset.
 
 Our priority is to ensure that the API has as close to 100% uptime as we can and to make sure that it can respond to requests in under 500ms.
 
