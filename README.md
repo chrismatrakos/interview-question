@@ -13,7 +13,7 @@ Our priority is to ensure that the API has as close to 100% uptime as we can and
 
 We need to make sure that it is tested in an automated way and that we have thought how the API would perform once the volumes of data increase.
 
-Data will be regularly updated during the day in the form of json files and the API needs to serve the latest available content.
+Data will be regularly updated during the day in the form of new json files and the API needs to serve the latest available content.
 
 The stakeholder for this project is mark.dessain@maersk.com. Please contact Mark for any clarifications.
 
