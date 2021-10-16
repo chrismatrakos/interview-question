@@ -4,7 +4,7 @@ const swagger = require('./swagger.route');
 
 const router = express.Router();
 
-router.use('/vi', product);
+router.use('/v1', product);
 router.use('/', swagger);
 
 router.get('/', (req, res) => res.send('Sample Node API Version1'));
