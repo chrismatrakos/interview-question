@@ -1,7 +1,8 @@
 const productService = require('../services/product.service');
 
 const get = function(req, res){
- res.send(productService.get(req.params._id))
+ console.log(`query attribute: ${req.query.attribute}, value: ${req.query.value}`)
+ res.send(productService.get(req.query.attribute, req.query.value))
 }
 
 const getAll = function(req, res){
