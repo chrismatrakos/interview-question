@@ -1,0 +1,11 @@
+1st phase
+start server.
+parse load json in memory
+query and return from curl command the data.
+
+2nd phase
+create db on start
+load json and store on db
+query and return curl results from db
+
+3rd add unit tests / mocha, chai framework
