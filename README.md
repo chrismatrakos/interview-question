@@ -8,7 +8,6 @@ We need to make sure that it is tested in an automated way and that we have thou
 
 Data will be regularly updated during the day in the form of new json files and the API needs to serve the latest available content.
 
-The stakeholder for this project is mark.dessain@maersk.com. Please contact Mark for any clarifications.
 
 ## Resources
 There is an example dataset that we have been given found in [data.json](./data.json) that should be used to assist with the development.
