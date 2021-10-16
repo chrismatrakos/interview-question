@@ -1,11 +1,4 @@
 
-# Maersk Interview Exercise
-
-## Introduction
-Thank you for applying for a job at Maersk. Building consistent, well thought out and performant APIs across the whole organisation is one of our key priority. Having our platforms and systems connecting and talking to each other seamlessly has the potential to drive and innovate how we work.
-
-The following is a short test to see how you would approach building a search API.
-
 ## Exercise
 Our team needs to build an API that can provide full text search over all the attributes in a given dataset.
 
