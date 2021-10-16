@@ -1,11 +1,13 @@
-const express = require('express')
+const express = require('express');
+const http = require('http');
 const cors = require('cors');
-
-//setup app & its routes
+//setup app & its route
+const routes = require('./routes/index.route');
 const app = express();
 const port = 8080;
+const serviceName = "simple_rest_api";
+
 app.use(cors());
-const routes = require('./routes/index.route');
 app.use(routes);
 
 //start http server

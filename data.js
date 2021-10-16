@@ -1,5 +1,5 @@
 module.exports = {
-  Data: [
+  Products: [
           {
             "id": 1,
             "type": "incident",

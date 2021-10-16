@@ -1,13 +1,12 @@
-const productService = require('./product.service');
+const data = require('../data');
 
-const get = function(req, res){
-    res.send(productService.get(req.params._id));
+const get = function(_id){
+    return getAll().find(product => product._id == _id);
 }
 
-const getAll = function(req, res){
-    res.send(productService.getAll());
+const getAll = function(){
+    return data.Products;
 }
-
 module.exports = {
     get,
     getAll
