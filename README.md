@@ -17,8 +17,8 @@ At the root directory run from the terminal the command
 ```node app.js```  
 This is the entry point of the appication.  
 The server will start running and listening on port 8080.  
-The output ```http server listening at port 8080``` will be printed in the terminal and you can access the server at   
-```http://localhost:8080``` and you should see ```Sample Node API Version1```.  
+The output ```http server listening at port 8080``` will be printed in the terminal.  
+Open your broswer and go to ```http://localhost:8080``` and you should see ```Sample Node API Version1```.  
 
 ### How to use  
 Ways to access the data / Run HTTP GET request.  
