@@ -22,7 +22,7 @@ Open your broswer and go to ```http://localhost:8080``` and you should see ```Sa
 
 ### How to use  
 Ways to access the data / Run HTTP GET request.  
-### 1 First way, from the browser  
+### 1st way, from the browser  
 If you browse to ```http://localhost:8080/v1``` then there will be an ouput of  
  all the data that are stored in data.json file.
   
@@ -30,7 +30,7 @@ If you browse to ```http://localhost:8080/v1/search?attribute=priority&value=hig
  then there will be an ouput of all the data that are stored in data.json file that match the attribute and value in the url.   
 You can replace the attribute and value in the query with any other attribue of value you want to search.  
  
-### 2 Second way to get the data from the terminal.
+### 2nd way to get the data from the terminal.
 Run the curl commands
 ```bash 
   curl http://localhost:8080/v1
