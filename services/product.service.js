@@ -1,16 +1,29 @@
-const data = require('../data');
+const data = require('../data.json');
 
 const get = function(attr, value){
-    return getAll().filter(product => (product[attr] == value || is_member(product[attr], value)));
+    return getAll().filter(product => hasAttribute(product, attr) && containsValue(product, attr, value));
 }
 
 const getAll = function(){
-    return data.Products;
+    return data;
 }
 
-const is_member = function(attribute, value){
-    return attribute.toLowerCase().includes(value);
+const containsValue = function(product, attribute, value){
+    return (product[attribute] == value) || isMember(product[attribute], value);
 }
+
+const isMember = function(attribute, value){
+    return attribute.toLowerCase().includes(value.toLowerCase());
+}
+
+const hasAttribute  = function(product, attribute){
+    if(product.hasOwnProperty(attribute)){
+        return true;    
+   }
+    console.log(`GET failed for product: ${JSON.stringify(product, null, 2)}, invalid attr: ${attribute} in data`);
+    return false;
+}
+
 module.exports = {
     get,
     getAll
