@@ -1,3 +1,41 @@
+##Setup
+Make sure node.js and npm packet manager is installed.
+You can verify by running in the command line 
+  ```node -v```
+  ```npm -v```
+  
+Clone the repo locally and at the root directory run the following commands
+```npm install```.
+The above command will get all dependencies needed to run the application.
+The packages are specified in package-lock.json file.
+
+At the root directory run from the terminal the command
+```node app.js``` 
+This is the entry point of the appication. The server will start running and listening on port 8080.
+The output ```http server listening at port 8080``` will be printed in the terminal and you can access the server at ```http://localhost:8080``` that will return ```Sample Node API Version1```.
+
+Ways to access the data / Run HTTP GET request.
+First way, from the browser
+If you browse to ```http://localhost:8080/v1``` then there will be an ouput of all the data that are stored in data.json file.
+
+If you browse to ```http://localhost:8080/v1/search?attribute=priority&value=high``` then there will be an ouput of all the data that are stored in data.json file that match the attribute and value in the url. 
+You can replace the attribute and value in teh query with any other attribue of value yuo want to search.
+
+Second way to get the data from the terminal.
+Run the curl commands
+```bash 
+  curl http://localhost:8080/v1
+``` 
+to get all data
+
+### Example 1
+```bash
+curl "localhost:8080/v1/search?attribute=subject&value=missing"
+```
+### Example 2
+```bash
+curl "localhost:8080/v1/search?attribute=priority&value=high"
+```
 
 ## Exercise
 Our team needs to build an API that can provide full text search over all the attributes in a given dataset.
