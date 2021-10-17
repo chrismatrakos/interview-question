@@ -1,26 +1,37 @@
+### Description
+A simple rest API that can provide full text search over all the attributes in a given dataset.  
+
 ### Setup locally
 Make sure node.js and npm packet manager are installed in you machine.  
 You can verify by running in the command line  
   ```node -v```  
   ```npm -v```  
   
-Clone the repo locally and at the root directory run the following commands
-```npm install```.
-The above command will get all dependencies needed to run the application.
-The packages are specified in package-lock.json file.
+Clone the repo locally and at the root directory run the following command:  
+```npm install```  
+The above command will get all dependencies needed to run the application.  
+The packages are specified in package-lock.json file.  
+  
+### Start the server  
+At the root directory run from the terminal the command  
+```node app.js```  
+This is the entry point of the appication.  
+The server will start running and listening on port 8080.  
+The output ```http server listening at port 8080``` will be printed in the terminal and you can access the server at   
+```http://localhost:8080``` and you should see ```Sample Node API Version1```.  
 
-At the root directory run from the terminal the command
-```node app.js``` 
-This is the entry point of the appication. The server will start running and listening on port 8080.
-The output ```http server listening at port 8080``` will be printed in the terminal and you can access the server at ```http://localhost:8080``` that will return ```Sample Node API Version1```.
-
-Ways to access the data / Run HTTP GET request.
-First way, from the browser
-If you browse to ```http://localhost:8080/v1``` then there will be an ouput of all the data that are stored in data.json file.
-
-If you browse to ```http://localhost:8080/v1/search?attribute=priority&value=high``` then there will be an ouput of all the data that are stored in data.json file that match the attribute and value in the url. 
-You can replace the attribute and value in teh query with any other attribue of value yuo want to search.
-
+### How to use  
+Ways to access the data / Run HTTP GET request.  
+### 1  
+First way, from the browser  
+If you browse to ```http://localhost:8080/v1``` then there will be an ouput of  
+ all the data that are stored in data.json file.
+  
+If you browse to ```http://localhost:8080/v1/search?attribute=priority&value=high```  
+ then there will be an ouput of all the data that are stored in data.json file that match the attribute and value in the url.   
+You can replace the attribute and value in the query with any other attribue of value you want to search.  
+ 
+### 2  
 Second way to get the data from the terminal.
 Run the curl commands
 ```bash 
@@ -32,77 +43,9 @@ to get all data
 ```bash
 curl "localhost:8080/v1/search?attribute=subject&value=missing"
 ```
-to get all data with attribute subject and value missing
+to get all data with attribute subject and value missing.
 ### Example 2
 ```bash
 curl "localhost:8080/v1/search?attribute=priority&value=high"
 ```
-to get all data with attibute priority and value high
-
-## Exercise
-Our team needs to build an API that can provide full text search over all the attributes in a given dataset.
-
-Our priority is to ensure that the API has as close to 100% uptime as we can and to make sure that it can respond to requests in under 500ms.
-
-We need to make sure that it is tested in an automated way and that we have thought how the API would perform once the volumes of data increase.
-
-Data will be regularly updated during the day in the form of new json files and the API needs to serve the latest available content.
-
-
-## Resources
-There is an example dataset that we have been given found in [data.json](./data.json) that should be used to assist with the development.
-
-There is an [openapi.json](./openapi.json) which is the specification that the API must conform to. It is based on [OpenAPI](https://en.wikipedia.org/wiki/OpenAPI_Specification).
-
-## Exercise
-Build an API in your chosen programming language which meets the specification.
-
-There are a few examples included to help
-
-### Example 1
-```bash
-curl localhost:8080/v1/search?attribute=subject&value=missing
-```
-
-```bash
-[
-  {
-    "id": 1,
-    "type": "incident",
-    "subject": "Cargo Missing",
-    "description": "Nostrud ad sit velit cupidatat laboris ipsum nisi amet laboris ex exercitation amet et proident. Ipsum fugiat aute dolore tempor nostrud velit ipsum.",
-    "priority": "high",
-    "status": "pending"
-  }
-]
-```
-
-### Example 2
-```bash
-curl localhost:8080/v1/search?attribute=priority&value=high
-```
-
-```bash
-[
-  {
-    "id": 1,
-    "type": "incident",
-    "subject": "Cargo Missing",
-    "description": "Nostrud ad sit velit cupidatat laboris ipsum nisi amet laboris ex exercitation amet et proident. Ipsum fugiat aute dolore tempor nostrud velit ipsum.",
-    "priority": "high",
-    "status": "pending"
-  },
-  {
-    "id": 3,
-    "type": "incident",
-    "subject": "Payment Sent Error",
-    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    "priority": "high",
-    "status": "pending"
-  }
-]
-
-```
-
-## Submitting
-We would prefer that a Github link (public or private) be provided with your solution, however a zip archive is also acceptable.
+to get all data with attibute priority and value high.
