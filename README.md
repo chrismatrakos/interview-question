@@ -1,8 +1,8 @@
-##Setup
-Make sure node.js and npm packet manager is installed.
-You can verify by running in the command line 
-  ```node -v```
-  ```npm -v```
+### Setup locally
+Make sure node.js and npm packet manager are installed in you machine.  
+You can verify by running in the command line  
+  ```node -v```  
+  ```npm -v```  
   
 Clone the repo locally and at the root directory run the following commands
 ```npm install```.
@@ -32,10 +32,12 @@ to get all data
 ```bash
 curl "localhost:8080/v1/search?attribute=subject&value=missing"
 ```
+to get all data with attribute subject and value missing
 ### Example 2
 ```bash
 curl "localhost:8080/v1/search?attribute=priority&value=high"
 ```
+to get all data with attibute priority and value high
 
 ## Exercise
 Our team needs to build an API that can provide full text search over all the attributes in a given dataset.
