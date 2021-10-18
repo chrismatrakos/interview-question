@@ -49,4 +49,29 @@ to get all data with attribute subject and value missing.
 ```bash
 curl "localhost:8080/v1/search?attribute=priority&value=high"
 ```
-to get all data with attibute priority and value high.
+to get all data with attibute priority and value high.  
+
+### Run the unit tests  
+To test the application and run the unit tests  
+in the root directory of the project (interview-question)  
+run the following command from the terminal:  
+```bash
+  npm test
+```  
+This should run all unit test in test folder and should see  
+the description and resul of each unit test in teh terminal. 
+
+### Example:
+```
+C:\Users\testuser2\Documents\simple_rest_api\interview-question>npm test
+> rest-api@1.0.0 test C:\Users\testuser2\Documents\simple_rest_api\interview-question
+> mocha
+
+  Test data contain all attributes
+    ✔ contains attributes
+
+  Test all data types are valid
+    ✔ expects valid data
+
+  2 passing (13ms)
+  ```
