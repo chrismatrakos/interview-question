@@ -11,13 +11,17 @@ You can verify by running in the command line, example:
   
 Clone the repo locally and cd at "interview-question" folder.  
 At the root directory of "interview-question" folder run the following command:  
-```npm install```  
+```bash
+npm install
+```  
 The above command will get all dependencies needed to run the application.  
 The packages are specified in package.json and package-lock.json file.  
   
 ### Start the server  
-At the root directory run from the terminal the command  
-```node app.js```  
+At the root directory run from the terminal the command:  
+```bash
+node app.js
+```  
 This is the entry point of the appication.  
 The server will start running and listening on port 8080.  
 The output ```http server listening at port 8080``` will be printed in the terminal.  
