@@ -6,8 +6,8 @@ Make sure node.js and npm packet manager are installed in you machine.
 Download node.js from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)   
 
 You can verify by running in the command line, example:    
-  ```node -v```  --> ```v13.0.01```  
-  ```npm -v```  --> ```6.12.0```   
+  ```node -v```  --> ```v12.19.1```  
+  ```npm -v```  --> ```6.14.8```   
   
 Clone the repo locally and cd at "interview-question" folder.  
 At the root directory of "interview-question" folder run the following command:  

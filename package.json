@@ -4,12 +4,17 @@
   "description": "rest-api",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "dependencies": {
-    "http": "0.0.1-security",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "http": "0.0.1-security",
+    "save-dev": "0.0.1-security",
     "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
   }
 }
