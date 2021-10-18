@@ -44,12 +44,30 @@ to get all data
 ```bash
 curl "localhost:8080/v1/search?attribute=subject&value=missing"
 ```
-to get all data with attribute subject and value missing.
+to get all data with attribute subject and value missing.  
+
+### Output:  
+```bash
+C:\Program Files\Git\mingw64\bin>curl "localhost:8080/v1/search?attribute=subject&value=missing"
+[{"id":1,"type":"incident","subject":"Cargo Missing","description":"Nostrud
+ad sit velit cupidatat laboris ipsum nisi amet laboris ex exercitation amet
+et proident. Ipsum fugiat aute dolore tempor nostrud velit ipsum.","priority":"high","status":"pending"}]
+```
+
+
 ### Example 2
 ```bash
 curl "localhost:8080/v1/search?attribute=priority&value=high"
 ```
 to get all data with attibute priority and value high.  
+
+### Output:  
+```bash
+C:\Program Files\Git\mingw64\bin>curl "localhost:8080/v1/search?attribute=priority&value=high"
+[{"id":1,"type":"incident","subject":"Cargo Missing","description":"Nostrud
+ad sit velit cupidatat laboris ipsum nisi amet laboris ex exercitation amet
+et proident. Ipsum fugiat aute dolore tempor nostrud velit ipsum.","priority":"high","status":"pending"},{"id":3,"type":"incident","subject":"Payment Sent Error","description":"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit","priority":"high","status":"pending"}]
+```
 
 ### Run the unit tests  
 To test the application and run the unit tests  
