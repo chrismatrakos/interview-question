@@ -81,13 +81,28 @@ run the following command from the terminal:
   npm test
 ```  
 This should run all unit test in test folder and should see  
-the description and resul of each unit test in teh terminal. 
+the description and result of each unit test in the terminal. 
 
 ### Example:
 ```
 C:\Users\testuser2\Documents\simple_rest_api\interview-question>npm test
+
 > rest-api@1.0.0 test C:\Users\testuser2\Documents\simple_rest_api\interview-question
 > mocha
+
+[simple_rest_api] http server listening at port 8080
+
+  /GET data
+get all
+    ✔ it should GET all the data
+
+  /GET data
+get query attribute: priority, value: high
+    ✔ it should GET data with priority high
+
+  /GET data
+get query attribute: status, value: pending
+    ✔ it should GET data with status pending
 
   Test data contain all attributes
     ✔ contains attributes
@@ -95,5 +110,5 @@ C:\Users\testuser2\Documents\simple_rest_api\interview-question>npm test
   Test all data types are valid
     ✔ expects valid data
 
-  2 passing (13ms)
+  5 passing (59ms)
   ```
