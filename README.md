@@ -2,10 +2,12 @@
 A simple rest API that can provide full text search over all the attributes in a given dataset.  
 
 ### Setup locally
-Make sure node.js and npm packet manager are installed in you machine.  
-You can verify by running in the command line  
-  ```node -v```  
-  ```npm -v```  
+Make sure node.js and npm packet manager are installed in you machine. 
+Download node.js from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)   
+
+You can verify by running in the command line, example:    
+  ```node -v```  --> ```v13.0.01````
+  ```npm -v```  --> ```6.12.0````
   
 Clone the repo locally and cd at "interview-question" folder.  
 At the root directory of "interview-question" folder run the following command:  
